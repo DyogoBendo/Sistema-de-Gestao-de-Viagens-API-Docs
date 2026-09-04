@@ -1,0 +1,27 @@
+info:
+  name: Viagem - Criar Rascunho
+  type: http
+  seq: 15
+
+http:
+  method: POST
+  url: http://localhost:8080/viagem
+  body:
+    type: json
+    data: |-
+      {
+        "destino": "Foz do Iguaçu",
+        "dataSaida": "2026-10-10",
+        "dataRetorno": "2026-10-15",
+        "motivoId": 1,
+        "meioTransporteId": 1,
+        "empregadoMatricula": "1234-5"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: true

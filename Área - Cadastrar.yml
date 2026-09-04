@@ -1,0 +1,22 @@
+info:
+  name: Área - Cadastrar
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:8080/area
+  body:
+    type: json
+    data: |-
+      {
+        "nome": "GE.DT"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

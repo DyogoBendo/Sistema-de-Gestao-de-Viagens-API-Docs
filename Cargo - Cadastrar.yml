@@ -1,0 +1,17 @@
+info:
+  name: Cargo - Cadastrar
+  type: http
+  seq: 16
+http:
+  method: POST
+  url: http://localhost:8080/cargo
+  body:
+    type: json
+    data: |-
+      {
+        "nome": "Diretor"
+      }
+  auth: inherit
+settings:
+  encodeUrl: true
+  timeout: 0

@@ -1,0 +1,16 @@
+info:
+  name: Viagem - Solicitar (Empregado)
+  type: http
+  seq: 19
+
+http:
+  method: PATCH
+  url: http://localhost:8080/viagem/2/solicitar
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: true

@@ -2,6 +2,22 @@ opencollection: 1.0.0
 
 info:
   name: gestao-viagem
+config:
+  proxy:
+    inherit: true
+    config:
+      protocol: http
+      hostname: ""
+      port: ""
+      auth:
+        username: ""
+        password: ""
+      bypassProxy: ""
+
+request:
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnZXN0YW8tdmlhZ2VtLWFwaSIsInN1YiI6IjEyMzQtNSIsImNhcmdvIjoiR2VzdG9yIiwiZXhwIjoxNzg4NTYwNzgyfQ.cekt-vpQwmROA5Jn66Xx1SKBhxPywtqCsM5dX2EUeZI
 bundled: false
 extensions:
   bruno:

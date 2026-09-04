@@ -1,0 +1,26 @@
+info:
+  name: Empregado - Cadastrar
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: http://localhost:8080/empregado
+  body:
+    type: json
+    data: |-
+      {
+        "matricula": "1234-6",
+        "nome": "Willian2",
+        "cargoId": 1,
+        "areaId": 1,
+        "senha": "123"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: true

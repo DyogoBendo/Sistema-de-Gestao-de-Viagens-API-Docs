@@ -1,0 +1,23 @@
+info:
+  name: Viagem - Avaliar (Gestor)
+  type: http
+  seq: 14
+
+http:
+  method: PATCH
+  url: http://localhost:8080/viagem/2/avaliar
+  body:
+    type: json
+    data: |-
+      {
+        "acao": "Ajustes Solicitados",
+        "comentario": "Por favor, altere o meio de transporte para Carro da Empresa."
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: true

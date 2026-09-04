@@ -1,18 +1,16 @@
 info:
-  name: Cadastrar empregado
+  name: Cargo - Editar
   type: http
-  seq: 2
+  seq: 17
 
 http:
-  method: POST
-  url: http://localhost:8080/empregado
+  method: PUT
+  url: http://localhost:8080/cargo/3
   body:
     type: json
     data: |-
       {
-        "matricula": "ABCD",
-        "nome": "Joao Pedro",
-        "area": "GEDT"
+        "nome": "Colaborador Sênior"
       }
   auth: inherit
 
@@ -21,3 +19,4 @@ settings:
   timeout: 0
   followRedirects: true
   maxRedirects: 5
+  forwardAuthorizationHeader: true

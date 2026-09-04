@@ -1,11 +1,11 @@
 info:
-  name: Listar Viagens por ID
+  name: Empregado - Listar Todos
   type: http
-  seq: 5
+  seq: 8
 
 http:
   method: GET
-  url: http://localhost:8080/viagem/2
+  url: http://localhost:8080/empregado
   auth: inherit
 
 settings:

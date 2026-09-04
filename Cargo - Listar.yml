@@ -1,11 +1,11 @@
 info:
-  name: Apagar viagem por ID
+  name: Cargo - Listar
   type: http
-  seq: 7
+  seq: 5
 
 http:
-  method: DELETE
-  url: http://localhost:8080/viagem/1
+  method: GET
+  url: http://localhost:8080/cargo
   auth: inherit
 
 settings:
