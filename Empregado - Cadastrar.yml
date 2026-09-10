@@ -10,8 +10,8 @@ http:
     type: json
     data: |-
       {
-        "matricula": "1234-6",
-        "nome": "Willian2",
+        "matricula": "1234-5",
+        "nome": "Dyogo Bendo",
         "cargoId": 1,
         "areaId": 1,
         "senha": "123"

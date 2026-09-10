@@ -1,0 +1,20 @@
+info:
+  name: Despesa - Registrar
+  type: http
+  seq: 1
+http:
+  method: POST
+  url: http://localhost:8080/viagem/1/despesa
+  body:
+    type: json
+    data: |-
+      {
+        "dataDespesa": "2026-09-09",
+        "descricao": "Jantar restaurante próximo ao evento",
+        "valor": 75.50,
+        "tipoDespesaId": 2
+      }
+  auth: inherit
+settings:
+  encodeUrl: true
+  timeout: 0
